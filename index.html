@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Anyelo International · Conectando oportunidades desde China</title>
-<meta name="description" content="Ayudo a empresarios con producto y mercado a importar directo de fábrica desde China. Vivo en Yiwu y verifico en persona. Asesoría, sourcing, operación completa y marca propia.">
+<meta name="description" content="Soy Anyelo Silva. Conecto empresarios con proveedores confiables en China, minimizando riesgos. Vivo en Yiwu: soy los ojos y las manos de quienes confían en mí.">
 <meta property="og:title" content="Anyelo International · Conectando oportunidades desde China">
-<meta property="og:description" content="Tus ojos y tu mano derecha en China. Trabajo con empresarios que ya tienen producto, mercado y presupuesto.">
+<meta property="og:description" content="Conecto empresarios con proveedores confiables en China, minimizando riesgos. Vivo aquí: soy los ojos y las manos de quienes confían en mí.">
 <meta property="og:image" content="https://anyelointernational.com/img/og.jpg">
 <meta property="og:type" content="website">
 <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
@@ -17,20 +17,21 @@
 :root{--bg:#121110;--bg2:#1A1816;--panel:#25211E;--line:rgba(242,236,228,.12);--ink:#F2ECE4;--muted:#B9AE9F;--sand:#D5B998;--cu:#C46F3C;--cu2:#D9884F}
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{background:var(--bg);color:var(--ink);font-family:Inter,system-ui,sans-serif;font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+body{background:var(--bg);color:var(--ink);font-family:Inter,system-ui,sans-serif;font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
 img{display:block;max-width:100%}
 a{color:inherit}
 h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;font-weight:500;letter-spacing:-.01em;line-height:1.04}
 .wrap{max-width:1180px;margin:0 auto;padding:0 24px}
 .kicker{font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:var(--cu2);font-weight:600;display:flex;align-items:center;gap:14px}
-.kicker:before{content:"";width:28px;height:1px;background:var(--cu)}
-.btn{display:inline-flex;align-items:center;gap:10px;background:var(--cu);color:#fff;padding:16px 28px;border-radius:4px;font-weight:600;text-decoration:none;font-size:15px;transition:background .2s}
+.kicker:before{content:"";width:28px;height:1px;background:var(--cu);flex:none}
+.btn{display:inline-flex;align-items:center;gap:10px;background:var(--cu);color:#fff;padding:16px 28px;border-radius:4px;font-weight:600;text-decoration:none;font-size:15px;transition:background .2s;border:0;cursor:pointer;font-family:inherit}
 .btn:hover{background:var(--cu2)}
 .btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--line)}
 .btn.ghost:hover{background:rgba(255,255,255,.04)}
 section{padding:110px 0;border-top:1px solid var(--line)}
 h2{font-size:clamp(36px,4.4vw,60px);margin:18px 0 20px;max-width:860px}
 .lead{color:var(--muted);font-size:19px;max-width:660px}
+.lead+.lead{margin-top:18px}
 /* nav */
 nav{position:sticky;top:0;z-index:9;background:rgba(18,17,16,.86);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
 nav .wrap{display:flex;align-items:center;justify-content:space-between;height:72px}
@@ -40,10 +41,10 @@ nav ul{display:flex;gap:30px;list-style:none;font-size:14px;color:var(--muted)}
 nav ul a{text-decoration:none}
 nav ul a:hover{color:var(--ink)}
 /* hero */
-.hero{border-top:0;padding:0;position:relative;min-height:min(92vh,860px);display:flex;align-items:center;overflow:hidden}
+.hero{border-top:0;padding:0;position:relative;min-height:min(92vh,880px);display:flex;align-items:center;overflow:hidden}
 .hero .bg{position:absolute;inset:0}
-.hero .bg img{width:100%;height:100%;object-fit:cover;object-position:62% 50%}
-.hero .bg:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(18,17,16,.96) 0%,rgba(18,17,16,.86) 34%,rgba(18,17,16,.35) 62%,rgba(18,17,16,.15) 100%),linear-gradient(0deg,var(--bg) 0%,rgba(18,17,16,0) 28%)}
+.hero .bg img{width:100%;height:100%;object-fit:cover;object-position:60% 55%}
+.hero .bg:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(18,17,16,.94) 0%,rgba(18,17,16,.80) 32%,rgba(18,17,16,.25) 60%,rgba(18,17,16,.10) 100%),linear-gradient(0deg,var(--bg) 0%,rgba(18,17,16,0) 26%)}
 .hero .wrap{position:relative;padding-top:110px;padding-bottom:120px}
 .hero h1{font-size:clamp(46px,6.4vw,92px);margin:26px 0 24px;max-width:760px}
 .hero h1 em{font-style:italic;color:var(--sand)}
@@ -57,20 +58,27 @@ nav ul a:hover{color:var(--ink)}
 .stats div:last-child{border-right:0}
 .stats b{display:block;font-family:"Cormorant Garamond",serif;font-size:46px;font-weight:600;color:var(--sand);line-height:1}
 .stats small{color:var(--muted);font-size:13px;letter-spacing:.03em}
-/* intro / quien soy */
-.intro{display:grid;grid-template-columns:1.1fr .9fr;gap:70px;align-items:center}
+/* intro */
+.intro{display:grid;grid-template-columns:1.05fr .95fr;gap:70px;align-items:center}
 .intro .pic{position:relative}
-.intro .pic img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 20%;border:1px solid var(--line)}
+.intro .pic img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 30%;border:1px solid var(--line)}
 .intro .pic span{position:absolute;left:16px;bottom:16px;background:rgba(18,17,16,.8);border:1px solid var(--line);padding:10px 14px;font-size:12.5px;color:var(--muted);backdrop-filter:blur(6px)}
-.intro p+p{margin-top:18px}
+/* band with photo background */
+.band{position:relative;padding:150px 0;border-top:1px solid var(--line);background:#000;overflow:hidden}
+.band .bgimg{position:absolute;inset:0;background-size:cover;background-position:center 40%;opacity:.55}
+.band:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,var(--bg) 0%,rgba(18,17,16,.35) 25%,rgba(18,17,16,.35) 75%,var(--bg) 100%)}
+.band .wrap{position:relative}
+.band blockquote{font-family:"Cormorant Garamond",serif;font-size:clamp(28px,3.6vw,46px);line-height:1.2;max-width:900px;text-shadow:0 2px 24px rgba(0,0,0,.6)}
+.band cite{display:block;margin-top:22px;font-style:normal;font-family:Inter;font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:var(--sand)}
 /* services */
 .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:56px}
-.card{border:1px solid var(--line);padding:38px 32px;background:var(--panel);min-height:360px;display:flex;flex-direction:column;position:relative;overflow:hidden}
-.card:before{content:"";position:absolute;left:0;top:0;width:100%;height:3px;background:var(--cu)}
-.card .n{font-family:"Cormorant Garamond",serif;color:var(--cu2);font-size:22px}
-.card h3{font-size:31px;margin:14px 0 12px}
+.card{border:1px solid var(--line);background:var(--panel);display:flex;flex-direction:column;overflow:hidden}
+.card img{width:100%;aspect-ratio:4/3;object-fit:cover;filter:saturate(.95)}
+.card .body{padding:30px 30px 34px;flex:1;display:flex;flex-direction:column}
+.card .n{font-family:"Cormorant Garamond",serif;color:var(--cu2);font-size:20px}
+.card h3{font-size:30px;margin:10px 0 12px}
 .card p{color:var(--muted);font-size:15.5px;flex:1}
-.card .price{margin-top:24px;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--sand)}
+.card .price{margin-top:22px;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--sand)}
 /* fit */
 .fit{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:56px}
 .fit > div{padding:42px;border:1px solid var(--line);background:var(--bg2)}
@@ -80,7 +88,7 @@ nav ul a:hover{color:var(--ink)}
 .fit li{padding:13px 0 13px 30px;border-top:1px solid var(--line);position:relative;color:var(--muted);font-size:15.5px}
 .fit li:before{content:"";position:absolute;left:0;top:22px;width:14px;height:1px;background:var(--cu)}
 .fit .no li:before{background:var(--muted)}
-.quote{margin-top:44px;padding:36px 44px;border-left:2px solid var(--cu);font-family:"Cormorant Garamond",serif;font-size:28px;line-height:1.3;max-width:900px;color:var(--ink)}
+.quote{margin-top:44px;padding:36px 44px;border-left:2px solid var(--cu);font-family:"Cormorant Garamond",serif;font-size:28px;line-height:1.3;max-width:900px}
 /* steps */
 .steps{display:grid;grid-template-columns:repeat(4,1fr);margin-top:56px;border:1px solid var(--line)}
 .steps div{padding:38px 28px;border-right:1px solid var(--line)}
@@ -88,18 +96,19 @@ nav ul a:hover{color:var(--ink)}
 .steps b{display:block;font-family:"Cormorant Garamond",serif;font-size:54px;color:var(--cu2);line-height:1;margin-bottom:14px;font-weight:500}
 .steps h4{font-size:19px;margin-bottom:8px}
 .steps p{color:var(--muted);font-size:14.5px}
+/* gallery */
+.gal{columns:3;column-gap:18px;margin-top:56px}
+.gal figure{break-inside:avoid;margin:0 0 18px;position:relative;overflow:hidden;border:1px solid var(--line);background:var(--bg2)}
+.gal img{width:100%;transition:transform .6s}
+.gal figure:hover img{transform:scale(1.03)}
+.gal figcaption{padding:14px 16px;font-size:13.5px;color:var(--muted);border-top:1px solid var(--line)}
+.gal figcaption b{display:block;color:var(--ink);font-weight:500;font-size:14.5px}
 /* respaldo */
 .back{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
-.back img{width:100%;aspect-ratio:4/3;object-fit:cover;border:1px solid var(--line)}
+.back img{width:100%;aspect-ratio:4/3;object-fit:cover;object-position:center;border:1px solid var(--line)}
 .back ul{list-style:none;margin-top:26px;display:grid;grid-template-columns:1fr 1fr;gap:14px 24px}
 .back li{padding-left:26px;position:relative;color:var(--muted);font-size:15px}
 .back li:before{content:"";position:absolute;left:0;top:12px;width:12px;height:1px;background:var(--cu)}
-/* gallery */
-.gal{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:56px}
-.gal figure{position:relative;overflow:hidden;border:1px solid var(--line)}
-.gal img{width:100%;aspect-ratio:3/4;object-fit:cover;transition:transform .6s}
-.gal figure:hover img{transform:scale(1.03)}
-.gal figcaption{position:absolute;left:0;right:0;bottom:0;padding:16px;font-size:13px;background:linear-gradient(0deg,rgba(18,17,16,.92),transparent)}
 /* faq */
 .faq{max-width:880px;margin-top:40px}
 .faq details{border-top:1px solid var(--line);padding:26px 0}
@@ -109,52 +118,52 @@ nav ul a:hover{color:var(--ink)}
 .faq summary:after{content:"+";color:var(--cu2);font-family:Inter;font-size:26px}
 .faq details[open] summary:after{content:"−"}
 .faq p{color:var(--muted);margin-top:14px;max-width:780px}
-/* cta final */
+/* diagnóstico */
 .cta-f{background:var(--panel);position:relative;overflow:hidden}
-.cta-f .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:center}
-.cta-f .box{border:1px solid var(--line);padding:40px;background:var(--bg)}
-.cta-f .box h3{font-size:30px;margin-bottom:10px}
-.cta-f .box p{color:var(--muted);font-size:15px;margin-bottom:24px}
-.cta-f .box+.box{margin-top:18px}
+.cta-f:before{content:"";position:absolute;inset:0;background:url('img/bg-chongqing.jpg') center 30%/cover;opacity:.16}
+.cta-f .wrap{position:relative;display:grid;grid-template-columns:1.05fr .95fr;gap:60px;align-items:start}
+.box{border:1px solid var(--line);padding:40px;background:var(--bg)}
+.quiz label{display:block;font-size:13px;letter-spacing:.04em;color:var(--sand);margin:18px 0 8px;font-weight:500}
+.quiz input,.quiz select{width:100%;background:var(--bg2);border:1px solid var(--line);color:var(--ink);padding:14px;font-size:16px;font-family:inherit;border-radius:4px}
+.quiz select{appearance:none;-webkit-appearance:none;background-image:linear-gradient(45deg,transparent 50%,var(--sand) 50%),linear-gradient(135deg,var(--sand) 50%,transparent 50%);background-position:calc(100% - 20px) 50%,calc(100% - 14px) 50%;background-size:6px 6px;background-repeat:no-repeat}
+.quiz input:focus,.quiz select:focus{outline:none;border-color:var(--cu)}
+.quiz .err{color:#E08A6A;font-size:14px;margin-top:12px}
+.result h3{font-size:30px;margin-bottom:12px}
+.result p{color:var(--muted);font-size:15.5px;margin-bottom:22px}
+.result .alt{margin:18px 0 0;font-size:14px}
+.result .alt a{color:var(--sand)}
 footer{padding:50px 0;border-top:1px solid var(--line);color:var(--muted);font-size:13.5px}
 footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px}
 footer a{text-decoration:none}
+.wa{position:fixed;right:18px;bottom:18px;z-index:20;display:none;align-items:center;gap:10px;background:#25D366;color:#0B1F12;font-weight:600;font-size:14px;padding:12px 16px;border-radius:999px;text-decoration:none;box-shadow:0 10px 30px rgba(0,0,0,.4)}
+.wa svg{width:20px;height:20px}
 @media(max-width:900px){
   nav ul{display:none}
   nav .wrap{height:64px}
   .logo{font-size:15px;letter-spacing:.1em;white-space:nowrap}
   nav .btn{display:none}
   section{padding:72px 0}
-  .hero{min-height:0}.hero .wrap{padding-top:90px;padding-bottom:110px}.hero .bg img{object-position:70% 50%}
+  .hero{min-height:0}.hero .wrap{padding-top:90px;padding-bottom:110px}.hero .bg img{object-position:68% 50%}
   .hero .cap{left:24px;right:auto;bottom:16px}
   .stats .wrap{grid-template-columns:repeat(2,1fr)}.stats div{border-bottom:1px solid var(--line)}.stats div:nth-child(even){border-right:0}
-  .intro,.cards,.fit,.steps,.back,.gal,.cta-f .wrap{grid-template-columns:1fr}
+  .intro,.cards,.fit,.steps,.back,.cta-f .wrap{grid-template-columns:1fr}
   .intro{gap:36px}.intro .pic{order:-1}
   .steps div{border-right:0;border-bottom:1px solid var(--line)}
   .back ul{grid-template-columns:1fr}
   .quote{padding:26px 24px;font-size:24px}
+  .band{padding:100px 0}
+  .gal{columns:1}
+  .box{padding:28px 22px}
+  .wa{display:inline-flex}
 }
-.wa{position:fixed;right:18px;bottom:18px;z-index:20;display:none;align-items:center;gap:10px;background:#25D366;color:#0B1F12;font-weight:600;font-size:14px;padding:12px 16px;border-radius:999px;text-decoration:none;box-shadow:0 10px 30px rgba(0,0,0,.4)}
-.wa svg{width:20px;height:20px}
-@media(max-width:900px){.wa{display:inline-flex}}
-.quiz label{display:block;font-size:13px;letter-spacing:.04em;color:var(--sand);margin:18px 0 8px;font-weight:500}
-.quiz input,.quiz select{width:100%;background:var(--bg2);border:1px solid var(--line);color:var(--ink);padding:14px;font-size:16px;font-family:inherit;border-radius:4px}
-.quiz select{appearance:none;-webkit-appearance:none;background-image:linear-gradient(45deg,transparent 50%,var(--sand) 50%),linear-gradient(135deg,var(--sand) 50%,transparent 50%);background-position:calc(100% - 20px) 50%,calc(100% - 14px) 50%;background-size:6px 6px;background-repeat:no-repeat}
-.quiz input:focus,.quiz select:focus{outline:none;border-color:var(--cu)}
-.quiz .err{color:#E08A6A;font-size:14px;margin-top:12px}
-.quiz button{border:0;cursor:pointer;font-family:inherit}
-.result h3{font-size:30px;margin-bottom:12px}
-.result p{color:var(--muted);font-size:15.5px;margin-bottom:22px}
-.result .alt{margin:18px 0 0;font-size:14px}
-.result .alt a{color:var(--sand)}
-.cta-f .wrap{align-items:start}
+@media(min-width:901px) and (max-width:1100px){.gal{columns:2}}
 </style>
 </head>
 <body>
 
 <nav><div class="wrap">
   <a class="logo" href="#">Anyelo International</a>
-  <ul><li><a href="#que">Qué hago</a></li><li><a href="#diagnostico">Tu proyecto</a></li><li><a href="#como">Cómo trabajo</a></li><li><a href="#respaldo">Respaldo</a></li><li><a href="#faq">Preguntas</a></li></ul>
+  <ul><li><a href="#que">Qué hago</a></li><li><a href="#como">Cómo trabajo</a></li><li><a href="#terreno">En terreno</a></li><li><a href="#faq">Preguntas</a></li></ul>
   <a class="btn" href="#diagnostico" style="padding:12px 20px">Cuéntame tu proyecto</a>
 </div></nav>
 
@@ -172,29 +181,34 @@ footer a{text-decoration:none}
 <div class="stats"><div class="wrap">
   <div><b>+500</b><small>proveedores en 6 sectores</small></div>
   <div><b>+50</b><small>inspecciones en fábrica</small></div>
-  <div><b>+50</b><small>contenedores despachados</small></div>
   <div><b>+20</b><small>ferias en 8 ciudades de China</small></div>
+  <div><b>6,2 M</b><small>reproducciones de mi contenido en 90 días</small></div>
   <div><b>25K</b><small>personas que siguen mi trabajo</small></div>
 </div></div>
 
 <section id="soy"><div class="wrap intro">
   <div>
     <div class="kicker">Quién soy</div>
-    <h2>Tus ojos y tu mano derecha en China.</h2>
-    <p class="lead">Soy Anyelo, colombiano, administrador de negocios internacionales. Desde 2026 vivo y trabajo en Yiwu, China, dentro de una operación real de comercio exterior: cotizaciones, órdenes de compra, inspecciones en fábrica, cargues de contenedor y ferias en ocho ciudades.</p>
-    <p class="lead">Lo que publico en redes es lo que veo todos los días. Lo que hago por mis clientes es convertir esa ventaja en decisiones: qué fábrica sí, qué precio es real, qué cantidad tiene sentido y cómo llega el producto a tu país sin sorpresas.</p>
+    <h2>Tus ojos y tus manos en China.</h2>
+    <p class="lead">Soy colombiano, administrador de negocios internacionales, y desde 2026 vivo y trabajo en Yiwu, el mercado mayorista más grande del mundo. Mi día a día es una operación real de comercio exterior: cotizaciones, órdenes de compra, inspecciones en fábrica, cargues de contenedor y ferias en ocho ciudades de China.</p>
+    <p class="lead">Lo que publico en redes es lo que veo todos los días. Lo que hago por quienes trabajan conmigo es convertir esa ventaja en decisiones: qué fábrica sí, qué precio es real, qué cantidad tiene sentido y cómo llega el producto a tu país sin sorpresas.</p>
   </div>
-  <div class="pic"><img src="img/anyelo-banderas.jpg" alt="Anyelo con las banderas de Colombia y China"><span>Delegación de Cámaras de Comercio · Yiwu, octubre 2026</span></div>
+  <div class="pic"><img src="img/retrato-insignia.jpg" alt="Anyelo Silva en China"><span>Anyelo Silva · China</span></div>
 </div></section>
+
+<div class="band"><div class="bgimg" style="background-image:url('img/bg-muralla.jpg')"></div><div class="wrap">
+  <blockquote>Todo lo que sé me ha costado: años en terreno, ferias, viajes, errores ajenos que vi de cerca. Por eso mi tiempo tiene un valor, y por eso lo entrego con responsabilidad.</blockquote>
+  <cite>Anyelo Silva · Yiwu, China</cite>
+</div></div>
 
 <section id="que"><div class="wrap">
   <div class="kicker">Qué hago exactamente</div>
   <h2>Tres formas de trabajar conmigo.</h2>
-  <p class="lead">No vendo cursos ni "productos ganadores". Trabajo con pocos proyectos a la vez para responder por cada uno. El alcance y la inversión de cada servicio se definen en la llamada de orientación.</p>
+  <p class="lead">No vendo cursos ni "productos ganadores". Trabajo con pocos proyectos a la vez para responder por cada uno. El alcance y la inversión de cada servicio los definimos juntos en la primera llamada.</p>
   <div class="cards">
-    <div class="card"><div class="n">01</div><h3>Asesoría de abastecimiento</h3><p>Estructuramos tu proyecto, verifico 2 a 3 fábricas reales para tu producto y te entrego un reporte con precios, cantidades mínimas y tiempos de producción.</p><div class="price">Para quien ya sabe qué vende y quiere traerlo directo</div></div>
-    <div class="card"><div class="n">02</div><h3>Operación completa</h3><p>Sourcing, negociación en terreno, inspección en fábrica, consolidación y embarque hasta tu país. Ejecutada con estructura corporativa, contratos y respaldo bancario internacional.</p><div class="price">Para órdenes de volumen · cotización por proyecto</div></div>
-    <div class="card"><div class="n">03</div><h3>Marca propia desde China</h3><p>Del concepto a la primera importación: identidad, empaque, proveedores y control de calidad. El alcance depende de tu presupuesto y lo definimos en la primera sesión.</p><div class="price">Para quien tiene el producto y el mercado definidos</div></div>
+    <div class="card"><img src="img/g-fabrica-foshan.jpg" alt=""><div class="body"><div class="n">01</div><h3>Asesoría de abastecimiento</h3><p>Estructuramos tu proyecto, verifico 2 a 3 fábricas reales para tu producto y te entrego un reporte con precios, cantidades mínimas y tiempos de producción.</p><div class="price">Para quien ya sabe qué vende y quiere traerlo directo</div></div></div>
+    <div class="card"><img src="img/g-cargue.jpg" alt=""><div class="body"><div class="n">02</div><h3>Operación completa</h3><p>Sourcing, negociación en terreno, inspección en fábrica, consolidación y embarque hasta tu país. Ejecutada con estructura corporativa, contratos y respaldo bancario internacional.</p><div class="price">Para órdenes de volumen · cotización por proyecto</div></div></div>
+    <div class="card"><img src="img/g-pet-fair.jpg" alt=""><div class="body"><div class="n">03</div><h3>Marca propia desde China</h3><p>Del concepto a la primera importación: identidad, empaque, proveedores y control de calidad. El alcance depende de tu presupuesto y lo definimos en la primera sesión.</p><div class="price">Para quien tiene el producto y el mercado definidos</div></div></div>
   </div>
 </div></section>
 
@@ -225,9 +239,32 @@ footer a{text-decoration:none}
   <h2>Sin promesas vacías. Con un siguiente paso definido.</h2>
   <div class="steps">
     <div><b>1</b><h4>Cuéntame tu proyecto</h4><p>Cinco preguntas, dos minutos. Tú mismo ves si encajamos.</p></div>
-    <div><b>2</b><h4>Llamada de orientación</h4><p>Sin costo, para proyectos que encajan. Agendas directo en mi calendario.</p></div>
-    <div><b>3</b><h4>Alcance y respaldo</h4><p>En la llamada te presento el paso a paso, mi responsabilidad en el proceso y el respaldo empresarial con el que opero.</p></div>
+    <div><b>2</b><h4>Llamada de reconocimiento</h4><p>30 minutos · 20 USD. Conozco tu proyecto y te digo con honestidad cómo puedo ayudarte.</p></div>
+    <div><b>3</b><h4>Alcance y respaldo</h4><p>En esa llamada te presento el paso a paso, mi responsabilidad en el proceso y el respaldo empresarial con el que opero.</p></div>
     <div><b>4</b><h4>Operación</h4><p>Verificación, cotización, inspección y embarque. Tú recibes; yo respondo.</p></div>
+  </div>
+</div></section>
+
+<section id="terreno"><div class="wrap">
+  <div class="kicker">En terreno</div>
+  <h2>Lo que veo todos los días, tú lo recibes como ventaja.</h2>
+  <p class="lead">Ferias, fábricas, delegaciones y ciudades. Esto no se aprende en un curso: se aprende estando aquí.</p>
+  <div class="gal">
+    <figure><img src="img/g-chongqing-world.jpg" alt=""><figcaption><b>Chongqing</b>El mundo es de quien va a buscarlo.</figcaption></figure>
+    <figure><img src="img/g-microfono.jpg" alt=""><figcaption><b>Conferencia ante empresarios colombianos</b>Delegación de las Cámaras de Comercio de Casanare y Cartagena · Yiwu</figcaption></figure>
+    <figure><img src="img/g-ciie-entrevista.jpg" alt=""><figcaption><b>Entrevista en la CIIE</b>La feria de importación más grande de China · Shanghái</figcaption></figure>
+    <figure><img src="img/g-ace-shanghai.jpg" alt=""><figcaption><b>Feria ACE</b>Shanghái</figcaption></figure>
+    <figure><img src="img/g-camaras-yiwu.jpg" alt=""><figcaption><b>Mesa de trabajo con empresarios colombianos</b>Centro de Servicio de Compras para Colombia · Yiwu</figcaption></figure>
+    <figure><img src="img/g-negociacion.jpg" alt=""><figcaption><b>Negociación con proveedores</b>Donde se define el precio real</figcaption></figure>
+    <figure><img src="img/g-fabrica-foshan.jpg" alt=""><figcaption><b>Reunión en fábrica</b>Foshan, Guangdong</figcaption></figure>
+    <figure><img src="img/g-pet-fair.jpg" alt=""><figcaption><b>Pet Fair Asia 2026</b>Shanghái</figcaption></figure>
+    <figure><img src="img/g-ciie-necc.jpg" alt=""><figcaption><b>Centro Nacional de Exposiciones de Shanghái</b>Sede de la CIIE</figcaption></figure>
+    <figure><img src="img/g-cargue.jpg" alt=""><figcaption><b>Cargue de mercancía</b>Verificado antes de que salga</figcaption></figure>
+    <figure><img src="img/g-certificado.jpg" alt=""><figcaption><b>Certificado de lengua y cultura china</b>Yiwu Industrial &amp; Commercial College</figcaption></figure>
+    <figure><img src="img/g-pudong.jpg" alt=""><figcaption><b>Pudong</b>Shanghái</figcaption></figure>
+    <figure><img src="img/g-feria-stand.jpg" alt=""><figcaption><b>Recorriendo pabellones</b>Cada feria es un mapa de tendencias</figcaption></figure>
+    <figure><img src="img/g-chongqing-raffles.jpg" alt=""><figcaption><b>Chongqing de noche</b>Una de las ciudades donde he operado</figcaption></figure>
+    <figure><img src="img/g-shanghai-torres.jpg" alt=""><figcaption><b>Lujiazui</b>Shanghái</figcaption></figure>
   </div>
 </div></section>
 
@@ -243,31 +280,21 @@ footer a{text-decoration:none}
       <li>Contratos, inspecciones, consolidación y embarque</li>
     </ul>
   </div>
-  <img src="img/puerto.jpg" alt="Terminal de contenedores en China">
-</div></section>
-
-<section id="galeria"><div class="wrap">
-  <div class="kicker">En terreno</div>
-  <h2>Ferias, fábricas y delegaciones. Lo que veo todos los días, tú lo recibes como ventaja.</h2>
-  <div class="gal">
-    <figure><img src="img/charla-1.jpg" alt=""><figcaption>Presentando "qué buscar en China" a empresarios colombianos · Yiwu</figcaption></figure>
-    <figure><img src="img/yiwu-mercado.jpg" alt=""><figcaption>Yiwu International Trade City, el mercado mayorista más grande del mundo</figcaption></figure>
-    <figure><img src="img/charla-2.jpg" alt=""><figcaption>Delegación de Cámaras de Comercio de Casanare y Cartagena</figcaption></figure>
-  </div>
+  <img src="img/g-negociacion.jpg" alt="Negociación con proveedores en China">
 </div></section>
 
 <section id="faq"><div class="wrap">
   <div class="kicker">Preguntas frecuentes</div>
   <h2>Antes de escribirme.</h2>
   <div class="faq">
-    <details open><summary>¿Qué producto me recomiendas importar?</summary><p>Recomendarte un producto sería una irresponsabilidad completa de mi parte. Yo no sé qué sabes vender tú. Primero tienes que conocer en qué eres bueno vendiendo, en qué industria te mueves y a quién le vendes. Cuando tengas eso, ahí sí pensamos en China. Antes de eso, cualquier "producto ganador" que te den es una apuesta con tu plata.</p></details>
+    <details open><summary>¿Qué producto me recomiendas importar?</summary><p>Recomendarte un producto sería una irresponsabilidad de mi parte, porque no sé en qué eres bueno vendiendo tú. Primero hay que conocer tu industria, tu mercado y a quién le vendes. Cuando tengas eso, ahí sí pensamos en China. Antes de eso, cualquier "producto ganador" que te den es una apuesta con tu plata.</p></details>
+    <details><summary>¿La primera llamada tiene costo?</summary><p>Sí: 30 minutos por 20 USD. Es una llamada de reconocimiento, donde conozco tu proyecto y te explico el paso a paso, el alcance de cada servicio, mi responsabilidad en el proceso y el respaldo con el que opero. Tiene un valor simbólico porque todo lo que te voy a contar me ha costado años, ferias y viajes, y porque quiero dedicar ese tiempo a proyectos reales. Los servicios posteriores tienen su propio costo, y lo conoces antes de decidir.</p></details>
     <details><summary>¿Qué le pasa a la mayoría de los que importan por primera vez?</summary><p>Compran a un intermediario creyendo que es fábrica, no inspeccionan, y el problema aparece cuando el contenedor ya está en el puerto. Ahí ya no hay a quién reclamarle.</p></details>
-    <details><summary>¿La primera llamada tiene costo?</summary><p>No. Es una llamada de orientación para proyectos que encajan: ahí te explico el paso a paso, el alcance de cada servicio, mi responsabilidad en el proceso y el respaldo con el que opero. Los servicios posteriores sí tienen un costo, y lo conoces antes de decidir.</p></details>
-    <details><summary>¿Me das precios por WhatsApp?</summary><p>No, porque un precio sin producto, especificación y volumen es un número inventado. Cuéntame tu proyecto y en la llamada hablamos con datos reales.</p></details>
     <details><summary>¿Necesito tener el presupuesto definido?</summary><p>No necesariamente. Muchas veces el presupuesto se aterriza cuando conoces el precio real del producto en fábrica. Lo que sí necesitas es el producto y el mercado claros. Como referencia, las importaciones que acompaño parten de los 5.000 USD de primera orden.</p></details>
-    <details><summary>¿Trabajas solo con empresas o también con personas naturales?</summary><p>Con ambos, si el proyecto es serio, el producto está definido y el presupuesto es real.</p></details>
+    <details><summary>¿Me das precios por WhatsApp?</summary><p>No, porque un precio sin producto, especificación y volumen es un número inventado. Cuéntame tu proyecto y en la llamada hablamos con datos reales.</p></details>
+    <details><summary>¿Trabajas solo con empresas o también con personas naturales?</summary><p>Con ambos, si el proyecto es serio, el producto está definido y hay un mercado real detrás.</p></details>
     <details><summary>¿Haces inspecciones en persona?</summary><p>Sí. En Yiwu y en cualquier ciudad de China a la que haya que volar.</p></details>
-    <details><summary>¿Vendes cursos, mentorías o me ayudas a irme a vivir a China?</summary><p>No. Lo que sé de vivir aquí lo cuento gratis en mis videos. Mi trabajo es que tu importación salga bien.</p></details>
+    <details><summary>¿Vendes cursos o me ayudas a irme a vivir a China?</summary><p>No. Lo que sé de vivir aquí lo cuento gratis en mis videos. Mi trabajo es que tu importación salga bien.</p></details>
   </div>
 </div></section>
 
@@ -275,27 +302,28 @@ footer a{text-decoration:none}
   <div>
     <div class="kicker">Cuéntame tu proyecto</div>
     <h2>Cinco preguntas. Tú mismo ves si encajamos.</h2>
-    <p class="lead">Si tu proyecto encaja, agendas directo una llamada de orientación conmigo, sin costo. Si todavía no, te lo digo con honestidad y te dejo por dónde empezar.</p>
+    <p class="lead">Si tu proyecto encaja, agendas directo una llamada de reconocimiento conmigo. Si todavía no, te lo digo con honestidad y te dejo por dónde empezar.</p>
   </div>
+  <div>
   <form class="box quiz" id="quiz" novalidate>
-    <div class="q" data-q="1"><label>1. ¿Cuál describe mejor tu caso hoy?</label>
+    <div class="q"><label>1. ¿Cuál describe mejor tu caso hoy?</label>
       <select name="caso" required><option value="">Elige una opción</option><option value="vendo">Ya vendo y quiero importar directo de fábrica</option><option value="empresa">Tengo empresa y quiero bajar costos o ampliar referencias</option><option value="marca">Quiero crear una marca propia con un producto definido</option><option value="importo">Ya importo y necesito verificar fábricas o inspeccionar</option><option value="explorando">Estoy explorando, aún no tengo producto</option></select></div>
-    <div class="q" data-q="2"><label>2. ¿Qué producto o línea quieres traer?</label><input name="producto" placeholder="Sé lo más específico posible" required></div>
-    <div class="q" data-q="3"><label>3. ¿A quién le vendes o le venderías, y en qué país?</label><input name="mercado" placeholder="Ej. tiendas de mascotas en Bogotá, por mayor y por redes" required></div>
-    <div class="q" data-q="4"><label>4. ¿Has importado desde China antes?</label>
+    <div class="q"><label>2. ¿Qué producto o línea quieres traer?</label><input name="producto" placeholder="Sé lo más específico posible" required></div>
+    <div class="q"><label>3. ¿A quién le vendes o le venderías, y en qué país?</label><input name="mercado" placeholder="Ej. tiendas de mascotas en Bogotá, por mayor y por redes" required></div>
+    <div class="q"><label>4. ¿Has importado desde China antes?</label>
       <select name="experiencia" required><option value="">Elige una opción</option><option value="varias">Sí, varias veces</option><option value="una">Sí, una vez</option><option value="nunca">No, sería la primera</option></select></div>
-    <div class="q" data-q="5"><label>5. ¿Para cuándo necesitas el producto?</label>
+    <div class="q"><label>5. ¿Para cuándo necesitas el producto?</label>
       <select name="plazo" required><option value="">Elige una opción</option><option value="mes">Este mes</option><option value="1-3">En 1 a 3 meses</option><option value="3-6">En 3 a 6 meses</option><option value="explorando">Aún no lo sé, solo estoy explorando</option></select></div>
-    <div class="q" data-q="6"><label>Opcional: si ya lo tienes estimado, ¿presupuesto para la primera orden?</label>
+    <div class="q"><label>Opcional: si ya lo tienes estimado, ¿presupuesto para la primera orden?</label>
       <select name="presupuesto"><option value="">Aún no lo sé (está bien)</option><option value="<5k">Menos de 5.000 USD</option><option value="5-15k">5.000 a 15.000 USD</option><option value="15-50k">15.000 a 50.000 USD</option><option value=">50k">Más de 50.000 USD</option></select></div>
     <div style="margin-top:26px"><button class="btn" type="submit">Ver si encajamos →</button></div>
     <p class="err" id="qerr" hidden>Responde las cinco preguntas para continuar.</p>
   </form>
   <div class="box result" id="res-si" hidden>
     <h3>Tu proyecto encaja. Hablemos.</h3>
-    <p>Agenda tu llamada de orientación sin costo. En 30 minutos te presento el paso a paso, el alcance, mi responsabilidad en el proceso y el respaldo con el que opero.</p>
+    <p>Agenda tu llamada de reconocimiento: 30 minutos, 20 USD. Conozco tu proyecto, te presento el paso a paso, el alcance, mi responsabilidad en el proceso y el respaldo con el que opero. Sales sabiendo exactamente cuál es el siguiente paso.</p>
     <a class="btn" id="btn-cal" href="#" target="_blank" rel="noopener">Agendar llamada →</a>
-    <p class="alt">¿Prefieres escribirme? <a href="https://wa.me/message/ZZHAI3IR7BRHH1" target="_blank" rel="noopener">WhatsApp</a></p>
+    <p class="alt">¿Prefieres escribirme? WhatsApp <a href="https://wa.me/8618205891944" target="_blank" rel="noopener">China</a> · <a href="https://wa.me/message/ZZHAI3IR7BRHH1" target="_blank" rel="noopener">Colombia</a></p>
   </div>
   <div class="box result" id="res-no" hidden>
     <h3>Gracias por contarme. Todavía no es el momento, y está bien.</h3>
@@ -303,17 +331,21 @@ footer a{text-decoration:none}
     <a class="btn ghost" href="https://www.instagram.com/anyelo.international/" target="_blank" rel="noopener">Seguir mi contenido →</a>
     <p class="alt"><a href="#" id="again">Volver a responder</a></p>
   </div>
+  </div>
 </div></section>
 
 <footer><div class="wrap">
   <div>Anyelo International · Yiwu, China · 2026</div>
-  <div><a href="https://www.instagram.com/anyelo.international/" target="_blank" rel="noopener">Instagram</a> · <a href="https://www.linkedin.com/in/anyelosilva10" target="_blank" rel="noopener">LinkedIn</a></div>
+  <div><a href="https://www.instagram.com/anyelo.international/" target="_blank" rel="noopener">Instagram</a> · <a href="https://www.linkedin.com/in/anyelosilva10" target="_blank" rel="noopener">LinkedIn</a> · WhatsApp <a href="https://wa.me/8618205891944" target="_blank" rel="noopener">China</a> / <a href="https://wa.me/message/ZZHAI3IR7BRHH1" target="_blank" rel="noopener">Colombia</a></div>
   <div>No vendo cursos ni prometo ganancias.</div>
 </div></footer>
-<a class="wa" href="https://wa.me/message/ZZHAI3IR7BRHH1" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.5l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 12 12 0 0 0 4.6 4c.6.3 1.1.4 1.5.5.6.2 1.2.2 1.6.1.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.5-.3z"/></svg>Escríbeme</a>
+
+<a class="wa" href="https://wa.me/8618205891944" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.5l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 12 12 0 0 0 4.6 4c.6.3 1.1.4 1.5.5.6.2 1.2.2 1.6.1.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.5-.3z"/></svg>Escríbeme</a>
+
 <script>
-// Link de Calendly: pegar aquí cuando exista. Mientras esté vacío, el botón abre WhatsApp.
+// Link de Calendly: pegar aquí cuando exista. Mientras esté vacío, el botón abre WhatsApp China.
 var CALENDLY_URL = "";
+var WA_CHINA = "https://wa.me/8618205891944";
 (function(){
   var f=document.getElementById('quiz'), si=document.getElementById('res-si'), no=document.getElementById('res-no'), err=document.getElementById('qerr');
   if(!f) return;
@@ -328,7 +360,7 @@ var CALENDLY_URL = "";
     if(encaja){
       var resumen='Caso: '+caso+' | Producto: '+prod+' | Mercado: '+merc+' | Experiencia: '+exp+' | Plazo: '+plazo+(pres?' | Presupuesto: '+pres:'');
       var b=document.getElementById('btn-cal');
-      b.href = CALENDLY_URL ? CALENDLY_URL+(CALENDLY_URL.indexOf('?')>-1?'&':'?')+'a1='+encodeURIComponent(resumen) : 'https://wa.me/message/ZZHAI3IR7BRHH1';
+      b.href = CALENDLY_URL ? CALENDLY_URL+(CALENDLY_URL.indexOf('?')>-1?'&':'?')+'a1='+encodeURIComponent(resumen) : WA_CHINA+'?text='+encodeURIComponent('Hola Anyelo, respondí el cuestionario en tu web y encajo. '+resumen);
       si.hidden=false; si.scrollIntoView({behavior:'smooth',block:'center'});
     } else { no.hidden=false; no.scrollIntoView({behavior:'smooth',block:'center'}); }
   });
