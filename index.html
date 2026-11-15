@@ -9,7 +9,10 @@
 <meta property="og:description" content="Conecto empresarios con proveedores confiables en China, minimizando riesgos. Vivo aquí: soy los ojos y las manos de quienes confían en mí.">
 <meta property="og:image" content="https://anyelointernational.com/img/og.jpg">
 <meta property="og:type" content="website">
+<link rel="icon" href="img/favicon-32.png" sizes="32x32" type="image/png">
 <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<meta name="theme-color" content="#121110">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -143,7 +146,7 @@ footer a{text-decoration:none}
   .logo{font-size:15px;letter-spacing:.1em;white-space:nowrap}
   nav .btn{display:none}
   section{padding:72px 0}
-  .hero{min-height:0}.hero .wrap{padding-top:90px;padding-bottom:110px}.hero .bg img{object-position:68% 50%}
+  .hero{min-height:0}.hero .wrap{padding-top:90px;padding-bottom:110px}.hero .bg img{object-position:50% 45%}
   .hero .cap{left:24px;right:auto;bottom:16px}
   .stats .wrap{grid-template-columns:repeat(2,1fr)}.stats div{border-bottom:1px solid var(--line)}.stats div:nth-child(even){border-right:0}
   .intro,.cards,.fit,.steps,.back,.cta-f .wrap{grid-template-columns:1fr}
@@ -166,6 +169,10 @@ footer a{text-decoration:none}
   .hero .cap{right:52px;bottom:48px}
 }
 @media(min-width:901px) and (max-width:1228px){.hero .wrap{padding-left:24px}}
+.photo-bg{position:relative;overflow:hidden}
+.photo-bg .bgimg{position:absolute;inset:0;background-size:cover;background-position:center 35%;opacity:.14}
+.photo-bg .wrap{position:relative}
+.photo-bg .steps{background:rgba(18,17,16,.55);backdrop-filter:blur(2px)}
 </style>
 </head>
 <body>
@@ -177,11 +184,11 @@ footer a{text-decoration:none}
 </div></nav>
 
 <header class="hero">
-  <div class="bg"><img src="img/hero-shanghai.jpg" alt="Shanghái al atardecer" fetchpriority="high"></div>
+  <div class="bg"><picture><source media="(max-width: 900px)" srcset="img/hero-shanghai-movil.jpg"><img src="img/hero-shanghai.jpg" alt="Shanghái al atardecer" fetchpriority="high"></picture></div>
   <div class="wrap">
     <div class="kicker">Negocios · China · Conexiones</div>
     <h1>Conectando oportunidades <em>desde China.</em></h1>
-    <p>Soy Anyelo Silva. Conecto empresarios con proveedores confiables en China, minimizando riesgos. Vivo aquí, en Yiwu: soy los ojos y las manos de quienes confían en mí, con respaldo empresarial detrás.</p>
+    <p>Soy Anyelo Silva. Conecto empresarios con proveedores confiables en China, minimizando riesgos. Vivo en China: soy los ojos y las manos de quienes confían en mí, con respaldo empresarial detrás.</p>
     <div class="cta"><a class="btn" href="#diagnostico">Cuéntame tu proyecto →</a><a class="btn ghost" href="https://www.instagram.com/anyelo.international/" target="_blank" rel="noopener">Instagram · @anyelo.international</a></div>
   </div>
   <div class="cap">Shanghái · China</div>
@@ -190,8 +197,8 @@ footer a{text-decoration:none}
 <div class="stats"><div class="wrap">
   <div><b>+500</b><small>proveedores en 6 sectores</small></div>
   <div><b>+50</b><small>inspecciones en fábrica</small></div>
+  <div><b>+50</b><small>contenedores despachados</small></div>
   <div><b>+20</b><small>ferias en 8 ciudades de China</small></div>
-  <div><b>6,2 M</b><small>reproducciones de mi contenido en 90 días</small></div>
   <div><b>25K</b><small>personas que siguen mi trabajo</small></div>
 </div></div>
 
@@ -199,25 +206,20 @@ footer a{text-decoration:none}
   <div>
     <div class="kicker">Quién soy</div>
     <h2>Tus ojos y tus manos en China.</h2>
-    <p class="lead">Soy colombiano, administrador de negocios internacionales, y desde 2026 vivo y trabajo en Yiwu, el mercado mayorista más grande del mundo. Mi día a día es una operación real de comercio exterior: cotizaciones, órdenes de compra, inspecciones en fábrica, cargues de contenedor y ferias en ocho ciudades de China.</p>
-    <p class="lead">Lo que publico en redes es lo que veo todos los días. Lo que hago por quienes trabajan conmigo es convertir esa ventaja en decisiones: qué fábrica sí, qué precio es real, qué cantidad tiene sentido y cómo llega el producto a tu país sin sorpresas.</p>
+    <p class="lead">Soy Anyelo Silva, profesional en Administración de Negocios Internacionales. Vivo en China y trabajo dentro de una operación real de comercio exterior, día tras día: visitas a fábricas, desarrollo de nuevos productos, recorridos por mercados de miles de metros cuadrados, mesas de negociación, inspecciones de calidad y ferias internacionales donde se expone por primera vez hacia dónde van las industrias, lo último en productos y tecnología.</p>
+    <p class="lead">Lo que publico en redes es lo que veo todos los días. Lo que hacemos por quienes trabajan con nosotros es convertir esa ventaja en decisiones aquí, en China: qué fábrica sí, qué precio es real, qué cantidad tiene sentido y que la mercancía salga verificada, bien documentada y lista para tu proceso de importación.</p>
   </div>
   <div class="pic"><img src="img/retrato-insignia.jpg" alt="Anyelo Silva en China"><span>Anyelo Silva · China</span></div>
 </div></section>
 
-<div class="band"><div class="bgimg" style="background-image:url('img/bg-muralla.jpg')"></div><div class="wrap">
-  <blockquote>Todo lo que sé me ha costado: años en terreno, ferias, viajes, errores ajenos que vi de cerca. Por eso mi tiempo tiene un valor, y por eso lo entrego con responsabilidad.</blockquote>
-  <cite>Anyelo Silva · Yiwu, China</cite>
-</div></div>
-
 <section id="que"><div class="wrap">
   <div class="kicker">Qué hago exactamente</div>
-  <h2>Tres formas de trabajar conmigo.</h2>
-  <p class="lead">No vendo cursos ni "productos ganadores". Trabajo con pocos proyectos a la vez para responder por cada uno. El alcance y la inversión de cada servicio los definimos juntos en la primera llamada.</p>
+  <h2>Tres formas de trabajar con nosotros.</h2>
+  <p class="lead">No vendo cursos ni "productos ganadores". Trabajamos con pocos proyectos a la vez para responder por cada uno. El alcance y la inversión de cada servicio los definimos juntos en la primera llamada.</p>
   <div class="cards">
-    <div class="card"><img src="img/g-fabrica-foshan.jpg" alt=""><div class="body"><div class="n">01</div><h3>Asesoría de abastecimiento</h3><p>Estructuramos tu proyecto, verifico 2 a 3 fábricas reales para tu producto y te entrego un reporte con precios, cantidades mínimas y tiempos de producción.</p><div class="price">Para quien ya sabe qué vende y quiere traerlo directo</div></div></div>
-    <div class="card"><img src="img/g-cargue.jpg" alt=""><div class="body"><div class="n">02</div><h3>Operación completa</h3><p>Sourcing, negociación en terreno, inspección en fábrica, consolidación y embarque hasta tu país. Ejecutada con estructura corporativa, contratos y respaldo bancario internacional.</p><div class="price">Para órdenes de volumen · cotización por proyecto</div></div></div>
-    <div class="card"><img src="img/g-pet-fair.jpg" alt=""><div class="body"><div class="n">03</div><h3>Marca propia desde China</h3><p>Del concepto a la primera importación: identidad, empaque, proveedores y control de calidad. El alcance depende de tu presupuesto y lo definimos en la primera sesión.</p><div class="price">Para quien tiene el producto y el mercado definidos</div></div></div>
+    <div class="card"><img src="img/g-microfono.jpg" alt="" style="object-position:50% 25%"><div class="body"><div class="n">01</div><h3>Asesoría de abastecimiento</h3><p>Estructuramos tu proyecto, verificamos 2 a 3 fábricas reales para tu producto y te entregamos un reporte con precios, cantidades mínimas y tiempos de producción.</p><div class="price">Para quien ya sabe qué vende y quiere traerlo directo</div></div></div>
+    <div class="card"><img src="img/g-almuerzo.jpg" alt=""><div class="body"><div class="n">02</div><h3>Operación completa</h3><p>Sourcing, negociación en terreno, inspección en fábrica, consolidación y embarque desde China. Ejecutada con estructura corporativa, contratos y respaldo bancario internacional.</p><div class="price">Para órdenes de volumen · cotización por proyecto</div></div></div>
+    <div class="card"><img src="img/g-negociacion.jpg" alt=""><div class="body"><div class="n">03</div><h3>Marca propia desde China</h3><p>Del concepto a la primera importación: identidad, empaque, proveedores y control de calidad. El alcance depende de tu presupuesto y lo definimos juntos en la primera sesión.</p><div class="price">Para quien tiene el producto y el mercado definidos</div></div></div>
   </div>
 </div></section>
 
@@ -240,10 +242,9 @@ footer a{text-decoration:none}
       <li>Solo necesitas resolver una duda puntual: para eso está mi contenido, que es gratis.</li>
     </ul></div>
   </div>
-  <div class="quote">"Si todavía estás en la etapa de explorar, está bien: todos empezamos ahí. Lo más útil que puedo darte hoy es mi contenido. Cuando tengas el proyecto claro, aquí estaré."</div>
 </div></section>
 
-<section id="como"><div class="wrap">
+<section id="como" class="photo-bg"><div class="bgimg" style="background-image:url('img/bg-muralla.jpg')"></div><div class="wrap">
   <div class="kicker">Cómo trabajamos</div>
   <h2>Sin promesas vacías. Con un siguiente paso definido.</h2>
   <div class="steps">
@@ -257,39 +258,36 @@ footer a{text-decoration:none}
 <section id="terreno"><div class="wrap">
   <div class="kicker">En terreno</div>
   <h2>Lo que veo todos los días, tú lo recibes como ventaja.</h2>
-  <p class="lead">Ferias, fábricas, delegaciones y ciudades. Esto no se aprende en un curso: se aprende estando aquí.</p>
+  <p class="lead">Ferias, fábricas, delegaciones y mesas de negociación. Esto no se aprende en un curso: se aprende estando aquí.</p>
   <div class="gal">
-    <figure><img src="img/g-chongqing-world.jpg" alt=""><figcaption><b>Chongqing</b>El mundo es de quien va a buscarlo.</figcaption></figure>
-    <figure><img src="img/g-microfono.jpg" alt=""><figcaption><b>Conferencia ante empresarios colombianos</b>Delegación de las Cámaras de Comercio de Casanare y Cartagena · Yiwu</figcaption></figure>
-    <figure><img src="img/g-ciie-entrevista.jpg" alt=""><figcaption><b>Entrevista en la CIIE</b>La feria de importación más grande de China · Shanghái</figcaption></figure>
-    <figure><img src="img/g-ace-shanghai.jpg" alt=""><figcaption><b>Feria ACE</b>Shanghái</figcaption></figure>
-    <figure><img src="img/g-camaras-yiwu.jpg" alt=""><figcaption><b>Mesa de trabajo con empresarios colombianos</b>Centro de Servicio de Compras para Colombia · Yiwu</figcaption></figure>
-    <figure><img src="img/g-negociacion.jpg" alt=""><figcaption><b>Negociación con proveedores</b>Donde se define el precio real</figcaption></figure>
-    <figure><img src="img/g-fabrica-foshan.jpg" alt=""><figcaption><b>Reunión en fábrica</b>Foshan, Guangdong</figcaption></figure>
-    <figure><img src="img/g-pet-fair.jpg" alt=""><figcaption><b>Pet Fair Asia 2026</b>Shanghái</figcaption></figure>
+    <figure><img src="img/g-ciie-entrevista.jpg" alt=""><figcaption><b>CIIE · Shanghái</b>La feria de importación de productos extranjeros más grande de China</figcaption></figure>
+    <figure><img src="img/g-ace-shanghai.jpg" alt=""><figcaption><b>ACE 2026 · Feria Internacional de Agroquímicos</b>Shanghái, octubre 2026</figcaption></figure>
+    <figure><img src="img/g-camaras-yiwu.jpg" alt=""><figcaption><b>Mesa de trabajo con empresarios colombianos</b>Delegación de cámaras de comercio colombianas · Yiwu</figcaption></figure>
     <figure><img src="img/g-ciie-necc.jpg" alt=""><figcaption><b>Centro Nacional de Exposiciones de Shanghái</b>Sede de la CIIE</figcaption></figure>
-    <figure><img src="img/g-cargue.jpg" alt=""><figcaption><b>Cargue de mercancía</b>Verificado antes de que salga</figcaption></figure>
-    <figure><img src="img/g-certificado.jpg" alt=""><figcaption><b>Certificado de lengua y cultura china</b>Yiwu Industrial &amp; Commercial College</figcaption></figure>
-    <figure><img src="img/g-pudong.jpg" alt=""><figcaption><b>Pudong</b>Shanghái</figcaption></figure>
+    <figure><img src="img/g-fabrica-foshan.jpg" alt=""><figcaption><b>Verificación de fábricas</b>Foshan, Guangdong</figcaption></figure>
+    <figure><img src="img/g-pet-fair.jpg" alt=""><figcaption><b>Pet Fair Asia 2026</b>Shanghái</figcaption></figure>
+    <figure><img src="img/g-pudong.jpg" alt=""><figcaption><b>Conexiones mundiales</b>The Bund, Shanghái</figcaption></figure>
+    <figure><img src="img/g-certificado.jpg" alt=""><figcaption><b>Primer certificado de lengua y cultura china</b>Yiwu Industrial &amp; Commercial College</figcaption></figure>
     <figure><img src="img/g-feria-stand.jpg" alt=""><figcaption><b>Recorriendo pabellones</b>Cada feria es un mapa de tendencias</figcaption></figure>
-    <figure><img src="img/g-chongqing-raffles.jpg" alt=""><figcaption><b>Chongqing de noche</b>Una de las ciudades donde he operado</figcaption></figure>
-    <figure><img src="img/g-shanghai-torres.jpg" alt=""><figcaption><b>Lujiazui</b>Shanghái</figcaption></figure>
+    <figure><img src="img/g-chongqing-world.jpg" alt=""><figcaption><b>Chongqing</b>El mundo es de quien va a buscarlo.</figcaption></figure>
   </div>
 </div></section>
 
 <section id="respaldo"><div class="wrap back">
   <div>
     <div class="kicker">Respaldo corporativo</div>
-    <h2 style="font-size:46px">No soy solo yo hablando.</h2>
-    <p class="lead">Opero de la mano de un grupo de comercio internacional con más de 15 años de presencia en China, oficinas en Hong Kong, Shanghái, Yiwu y Bogotá, entidad legal china, banca en Hong Kong y acreditación institucional para atender compradores de Latinoamérica. Los proyectos que lo requieren se ejecutan con esa estructura. El nombre y el alcance completo te los presento en nuestra primera conversación.</p>
+    <h2 style="font-size:46px">La estructura detrás de Anyelo International.</h2>
+    <p class="lead">Opero de la mano de un grupo empresarial de comercio internacional con más de 15 años de experiencia en China. Contamos con oficinas en Hong Kong, Shanghái, Yiwu y Bogotá (Colombia), entidad legal 100% china, respaldo bancario y financiero en Hong Kong y acreditación institucional para atender compradores de Latinoamérica. Los proyectos que lo requieren se ejecutan con esa estructura. El alcance completo de esta estructura empresarial te lo presento a detalle en nuestra primera conversación.</p>
     <ul>
-      <li>Más de 15 años operando en China</li>
+      <li>Más de 15 años de experiencia en China</li>
       <li>Oficinas en Hong Kong, Shanghái, Yiwu y Bogotá</li>
-      <li>Entidad legal china y banca en Hong Kong</li>
+      <li>Entidad legal 100% china</li>
+      <li>Respaldo bancario y financiero en Hong Kong</li>
+      <li>Acreditación institucional para compradores de Latinoamérica</li>
       <li>Contratos, inspecciones, consolidación y embarque</li>
     </ul>
   </div>
-  <img src="img/g-negociacion.jpg" alt="Negociación con proveedores en China">
+  <img src="img/g-camaras-yiwu.jpg" alt="Mesa de trabajo con empresarios colombianos en Yiwu">
 </div></section>
 
 <section id="faq"><div class="wrap">
@@ -344,7 +342,7 @@ footer a{text-decoration:none}
 </div></section>
 
 <footer><div class="wrap">
-  <div>Anyelo International · Yiwu, China · 2026</div>
+  <div>Anyelo International · China · 2026</div>
   <div><a href="https://www.instagram.com/anyelo.international/" target="_blank" rel="noopener">Instagram</a> · <a href="https://www.linkedin.com/in/anyelosilva10" target="_blank" rel="noopener">LinkedIn</a> · WhatsApp <a href="https://wa.me/8618205891944" target="_blank" rel="noopener">China</a> / <a href="https://wa.me/message/ZZHAI3IR7BRHH1" target="_blank" rel="noopener">Colombia</a></div>
   <div>No vendo cursos ni prometo ganancias.</div>
 </div></footer>
