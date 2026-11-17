@@ -48,7 +48,7 @@ nav ul a:hover{color:var(--ink)}
 .hero .bg{position:absolute;inset:0}
 .hero .bg img{width:100%;height:100%;object-fit:cover;object-position:60% 55%}
 .hero .bg:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(18,17,16,.94) 0%,rgba(18,17,16,.80) 32%,rgba(18,17,16,.25) 60%,rgba(18,17,16,.10) 100%),linear-gradient(0deg,var(--bg) 0%,rgba(18,17,16,0) 26%)}
-.hero .wrap{position:relative;padding-top:110px;padding-bottom:120px}
+.hero .wrap{position:relative;width:100%;padding-top:110px;padding-bottom:120px}
 .hero h1{font-size:clamp(46px,6.4vw,92px);margin:26px 0 24px;max-width:760px}
 .hero h1 em{font-style:italic;color:var(--sand)}
 .hero p{color:var(--muted);font-size:19px;max-width:560px;margin-bottom:38px}
@@ -166,15 +166,18 @@ footer a{text-decoration:none}
 @media(min-width:901px) and (max-width:1100px){.gal{columns:2}}
 @media(min-width:901px){
   .hero{min-height:min(90vh,860px)}
-  .hero .bg img{width:118%;max-width:none;object-position:0 18%}
-  .hero h1{max-width:640px}
-  .hero p{max-width:520px}
-  .hero .bg:after{background:linear-gradient(90deg,rgba(18,17,16,.97) 0%,rgba(18,17,16,.92) 30%,rgba(18,17,16,.70) 46%,rgba(18,17,16,.22) 62%,rgba(18,17,16,.04) 100%),linear-gradient(0deg,var(--bg) 0%,rgba(18,17,16,0) 24%),linear-gradient(180deg,rgba(18,17,16,.35) 0%,rgba(18,17,16,0) 22%)}
+  .hero .bg{left:auto;right:0;width:64%}
+  .hero .bg img{object-position:38% 40%}
+  .hero .bg:after{background:linear-gradient(90deg,var(--bg) 0%,rgba(18,17,16,.82) 18%,rgba(18,17,16,.35) 40%,rgba(18,17,16,0) 62%),linear-gradient(0deg,var(--bg) 0%,rgba(18,17,16,0) 24%),linear-gradient(180deg,rgba(18,17,16,.45) 0%,rgba(18,17,16,0) 20%)}
+  .hero h1{max-width:620px}
+  .hero p{max-width:500px}
   .hero .cap{right:52px;bottom:48px}
 }
 @media(min-width:901px) and (max-width:1228px){.hero .wrap{padding-left:24px}}
 .photo-bg{position:relative;overflow:hidden}
 .photo-bg .bgimg{position:absolute;inset:0;background-size:cover;background-position:center 35%;opacity:.14}
+.photo-bg:before{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(180deg,var(--bg) 0%,rgba(18,17,16,0) 18%,rgba(18,17,16,0) 82%,var(--bg) 100%)}
+.photo-bg .wrap{z-index:2}
 .photo-bg .wrap{position:relative}
 .photo-bg .steps{background:rgba(18,17,16,.55);backdrop-filter:blur(2px)}
 </style>
@@ -216,7 +219,7 @@ footer a{text-decoration:none}
   <div class="pic"><img src="img/retrato-insignia.jpg" alt="Anyelo Silva en China"><span>Anyelo Silva · China</span></div>
 </div></section>
 
-<section id="que"><div class="wrap">
+<section id="que" class="photo-bg"><div class="bgimg" style="background-image:url('img/bg-bodega.jpg');background-position:center 50%;opacity:.13"></div><div class="wrap">
   <div class="kicker">Qué hago exactamente</div>
   <h2>Tres formas de trabajar con nosotros.</h2>
   <p class="lead">No vendo cursos ni "productos ganadores". Trabajamos con pocos proyectos a la vez para responder por cada uno. El alcance y la inversión de cada servicio los definimos juntos en la primera llamada.</p>
@@ -277,7 +280,7 @@ footer a{text-decoration:none}
   </div>
 </div></section>
 
-<section id="respaldo"><div class="wrap back">
+<section id="respaldo" class="photo-bg"><div class="bgimg" style="background-image:url('img/bg-plaza.jpg');background-position:center 45%;opacity:.14"></div><div class="wrap back">
   <div>
     <div class="kicker">Respaldo corporativo</div>
     <h2 style="font-size:46px">La estructura detrás de Anyelo International.</h2>
